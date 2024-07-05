@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional_Calculator</title>
+    <!-- css file -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- icon links cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+</head>
+<body>
+    <div class="container">
+        <div class="screen">
+            <input type="text" id="display">
+        </div>
+        <div class="container2">
+            <div class="flex">
+                <button onclick="op('AC')">AC</button>
+                <button onclick="op('del')"><i class="fa-regular fa-delete-left"></i></button>
+                <button onclick="op('.')">.</button>
+                <button onclick="op('/')">÷</button>
+            </div>
+            <div class="flex">
+                <button onclick="op('7')">7</button>
+                <button onclick="op('8')">8</button>
+                <button onclick="op('9')">9</button>
+                <button onclick="op('*')">*</button>
+            </div>
+            <div class="flex">
+                <button onclick="op('4')">4</button>
+                <button onclick="op('5')">5</button>
+                <button onclick="op('6')">6</button>
+                <button onclick="op('-')">-</button>
+            </div>
+            <div class="flex">
+                <button onclick="op('1')">1</button>
+                <button onclick="op('2')">2</button>
+                <button onclick="op('3')">3</button>
+                <button onclick="op('+')">+</button>
+            </div>
+            <div class="flex"><button
+                    onclick="op('00')">00</button>
+                <button onclick="op('0')">0</button>
+                <button class="result" id="aaaa" onclick="equal()">=</button>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript file -->
+    <script src="./script.js"></script>
+</body>
+</html>
