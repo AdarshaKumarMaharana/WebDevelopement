@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class='container'>
+        <div class='header'>
+            <h1>Connect Four</h1>
+        </div>
+        <div class='misc'>
+            <section id='players' class='players'>
+                <span class='checkWrap'>
+                    <svg xmlns="http://www.w3.org/2000/svg" class='checkmark'
+                    alt='checkmark to indicate current player' viewBox="0 0 448 512">
+                    <!-- Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                    <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                </span>
+                <div class='current-player blue'></div>
+                <span class='checkWrap'>
+                    <svg xmlns="http://www.w3.org/2000/svg" class='checkmark hide'
+                    alt='checkmark to indicate current player' viewBox="0 0 448 512">
+                    <!-- Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                    <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                </span>
+                <div class='current-player red'></div>
+            </section>
+            <section id='rules' class='rules'></section>
+            <section id='gameboard' class='gameboard'></section>
+            <section id='timing' class='timing'>
+                <button id='reset'>RESET</button>
+                <div class='timer-container'>
+                    <p>
+                        <span id='minutes'>00</span>
+                        :
+                        <span id='seconds'>00</span>
+                    </p>
+                </div>
+            </section>
+            <h2 class='hide'></h2>
+            <div class='credit'>
+                <p>Created by<a href='https://github.com/AdarshaKumarMaharana/AdarshaKumarMaharana' target='_blank'> Adarsha kumar</a></p>
+                <p>Source code available at:</p>
+                <p><a href='https://github.com/AdarshaKumarMaharana/WebDevelopement'target='_blank'>GitHub</a> |</p>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
