@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ccc;
+    & .container {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+
+        & .unorder {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            & .list {
+                list-style: none;
+                width: 150px;
+                height: 70px;
+
+                & a {
+                    position: relative;
+                    text-decoration: none;
+                    color: black;
+                    font-size: 30px;
+                    width: 150px;
+                    height: 70px;
+                    display: grid;
+                    place-items: center;
+                    transform: rotate(-30deg) skew(25deg);
+                    box-shadow: -20px 20px 10px rgb(0, 0, 0, 0.5);
+                    background-color: rgba(0, 0,0, 0.2);
+                    transition: 1s;
+
+                    & .fa-brands {
+                        transition: 1.2s;
+                    }
+                }
+
+                & a::before {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    content: "";
+                    width: 15px;
+                    height: 100%;
+                    background-color: #b1b1b1;
+                    transform: skewY(-45deg) translate(-14.8px, -7px);
+                    transition: 1s;
+                }
+
+                & a::after {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 15px;
+                    content: "";
+                    background-color: #b1b1b1;
+                    transform: skewX(-45deg) translate(7px, 14.9px);
+                    transition: 1s;
+                }
+
+                & a:hover .fa-brands {
+                    color: #fff;
+                }
+
+                & a:hover {
+                    transform: rotate(-30deg) skew(25deg) translate(20px, -20px);
+                    box-shadow: -50px 50px 50px rgb(0, 0, 0, 0.5);
+                }
+            }
+
+            & li:nth-child(1):hover a {
+                background-color: #3b995e;
+            }
+
+            & li:nth-child(1):hover a::after {
+                background-color: #2e8658;
+            }
+
+            & li:nth-child(1):hover a::before {
+                background-color: #4aad64;
+            }
+
+            & li:nth-child(2):hover a {
+                background-color: #4169d7;
+            }
+
+            & li:nth-child(2):hover a::after {
+                background-color: #2452d0;
+            }
+
+            & li:nth-child(2):hover a::before {
+                background-color: #617cc5;
+            }
+
+            & li:nth-child(3):hover a {
+                background-color: #55acee;
+            }
+
+            & li:nth-child(3):hover a::after {
+                background-color: #4184b7;
+            }
+
+            & li:nth-child(3):hover a::before {
+                background-color: #4d9fde;
+            }
+
+            & li:nth-child(4):hover a {
+                background-image: linear-gradient(45DEG, #405DE6, #5851DB, #833AB4, #C13584, #E1306C 99%);
+            }
+
+            & li:nth-child(4):hover a::after {
+                background-image: linear-gradient(160deg, #3450de, #5851DB, #833AB4, #C13584, #E1306C 99%);
+            }
+
+            & li:nth-child(4):hover a::before {
+                background-image: linear-gradient(50deg, #6b7fe5, #5851DB, #833AB4);
+            }
+        }
+    }
+}
