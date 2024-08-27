@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ababab;
+    display: grid;
+    place-items: center;
+
+    & .loader {
+        & ul {
+            display: flex;
+            gap: 5px;
+            list-style: none;
+
+            & li {
+                width: 50px;
+                height: 50px;
+                display: grid;
+                place-items: center;
+                background-color: grey;
+                font-size: 25px;
+                text-transform: uppercase;
+                font-weight: 600;
+                color: #fff;
+                text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+                animation: blink, bounce;
+                animation-duration: 2s, .7s;
+                animation-timing-function: linear, linear;
+                animation-iteration-count: infinite, infinite;
+                animation-delay: calc(0.3s * var(--i)), calc(0.1s * var(--i));
+            }
+        }
+    }
+}
+
+@keyframes blink {
+    0% {
+        color: #fff;
+    }
+
+    20% {
+        color: rgba(218, 165, 32, 1);
+    }
+
+    21% {
+        color: #fff;
+    }
+
+    40% {
+        color: rgba(218, 165, 32, 1);
+    }
+
+    59% {
+        color: rgba(218, 165, 32, 1);
+    }
+
+    60% {
+        color: #fff;
+    }
+
+    61% {
+        color: rgba(218, 165, 32, 1);
+    }
+
+    80% {
+        color: rgba(218, 165, 32, 1);
+    }
+
+    65% {
+        color: #fff;
+    }
+
+    100% {
+        color: rgba(218, 165, 32, 1);
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(25px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
